@@ -13,6 +13,10 @@ module DiscourseApi
       def disposable_tokens(params={})
         post("/invite-token/generate", params)
       end
+
+      def invite_user_link(params={})
+        post("/invites/link", params)
+      end
     end
   end
 end
